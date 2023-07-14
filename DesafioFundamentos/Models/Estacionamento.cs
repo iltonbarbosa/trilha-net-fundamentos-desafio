@@ -49,6 +49,7 @@ namespace DesafioFundamentos.Models
                 // *IMPLEMENTE AQUI*
 				veiculos.Remove(placa);
 
+//formatação de número com 3 casas decimais - Console.WriteLine("VOLUME = {0:F3}", volume);
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
             }
             else
