@@ -12,7 +12,7 @@ namespace DesafioFundamentos.Models
             this.precoPorHora = precoPorHora;
         }
 
-        public void AdicionarVeiculo()
+		public void AdicionarVeiculo()
         {
             // TODO: Pedir para o usuário digitar uma placa (ReadLine) e adicionar na lista "veiculos"
             // *IMPLEMENTE AQUI*
@@ -50,7 +50,10 @@ namespace DesafioFundamentos.Models
 				veiculos.Remove(placa);
 
 //formatação de número com 3 casas decimais - Console.WriteLine("VOLUME = {0:F3}", volume);
-                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
+//formatação de data: DateTime data = DateTime.Now; ou DateTime.Now.ToString("dd/MM/yyy HH:mm)
+//o DateTime.TryParseExact pode ser utilizado para validar datas.
+
+                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: {valorTotal:C}");
             }
             else
             {
